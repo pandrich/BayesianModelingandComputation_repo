@@ -9,3 +9,12 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
         args: ['--maxkb=5000']
+-   repo: https://github.com/PyCQA/flake8
+    rev: aff9c85
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/psf/black
+    rev: 8ed3e3d
+    hooks:
+    -   id: black
+    -   id: black-jupyter
